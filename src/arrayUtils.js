@@ -18,13 +18,15 @@ export const filterEven = (numbers) => numbers.filter((n) => n % 2 === 0);
 export const squareAll = (numbers) => numbers.map((n) => n ** 2);
 
 /**
- * Возвращает новый массив объектов, у которых присутствует заданное свойство.
+ * Возвращает новый массив объектов с заданным свойством.
  * @param {Object[]} items - исходный массив объектов
  * @param {string} property - имя искомого свойства
  * @returns {Object[]} новый массив отфильтрованных объектов
  */
 export const filterByProperty = (items, property) =>
-  items.filter((item) => Object.prototype.hasOwnProperty.call(item, property));
+  items.filter((item) =>
+    Object.prototype.hasOwnProperty.call(item, property),
+  );
 
 /**
  * Возвращает сумму элементов массива чисел.

@@ -18,7 +18,7 @@ export const sumOfEvenSquares = (numbers) =>
  * @param {Object[]} items - массив объектов
  * @param {string} property - имя числового свойства
  * @param {number} threshold - пороговое значение
- * @returns {number} среднее арифметическое (0, если подходящих элементов нет)
+ * @returns {number} среднее арифметическое (0, если элементов нет)
  */
 export const averageAboveThreshold = (items, property, threshold) => {
   const values = applyToEach(
