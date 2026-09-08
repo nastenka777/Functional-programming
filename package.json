@@ -1,0 +1,11 @@
+{
+  "name": "lab1-functional-js",
+  "version": "1.0.0",
+  "description": "Лабораторная работа №1. Основы функционального программирования в JavaScript",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "license": "MIT"
+}
