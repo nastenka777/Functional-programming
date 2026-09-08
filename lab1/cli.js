@@ -61,8 +61,16 @@ const objects = parseObjects(
 
 console.log('Введённые объекты:');
 console.log(objects);
-console.log("Объекты со свойством value:");
-console.log(filterByProperty(objects, 'value'));
+
+const withValue = filterByProperty(objects, 'value');
+
+console.log('Объекты со свойством value:');
+console.log(withValue);
+
+if (withValue.length === 0) {
+  console.log('Ни у одного объекта нет свойства value.');
+  console.log('Проверьте формат: имя:значение (двоеточие без пробелов).');
+}
 
 const threshold = Number(await rl.question('Введите порог: '));
 
